@@ -69,6 +69,13 @@
               
               <div class="box-content">
                 <?php echo $content; ?>
+
+                <hr/>
+                <footer>
+                  <p class="pull-right">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
+                  
+                </footer>
+                
               </div>
             </div>
           </div>
@@ -76,7 +83,7 @@
       </div>
     </div></div>
     
-
+    
     <?php echo Asset::js("custom.js");?>
   </body>
 </html>
