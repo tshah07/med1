@@ -25,6 +25,10 @@
   <link rel="stylesheet" href="<?php echo Uri::base();?>css/themes.css">
   <!-- Notify -->
   <link rel="stylesheet" href="<?php echo Uri::base();?>css/plugins/gritter/jquery.gritter.css">
+  <!-- Tagsinput -->
+  <link rel="stylesheet" href="<?php echo Uri::base();?>css/plugins/tagsinput/jquery.tagsinput.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="<?php echo Uri::base();?>css/plugins/select2/select2.css">
 
   <!-- jQuery -->
   <script src="<?php echo Uri::base();?>js/jquery.min.js"></script>
@@ -61,7 +65,7 @@
   <!-- Theme scripts -->
   <script src="<?php echo Uri::base();?>js/application.js"></script>
   <!-- Just for demonstration -->
-  <script src="<?php echo Uri::base();?>js/demonstration.min.js"></script>
+  <script src="<?php echo Uri::base();?>js/demonstration.js"></script>
 
   <!-- Notify -->
   <script src="<?php echo Uri::base();?>js/plugins/gritter/jquery.gritter.min.js"></script>
@@ -73,9 +77,15 @@
   <script src="<?php echo Uri::base();?>js/plugins/validation/jquery.validate.min.js"></script>
   <script src="<?php echo Uri::base();?>js/plugins/validation/additional-methods.min.js"></script>
 
+  <!-- TagsInput -->
+  <script src="<?php echo Uri::base();?>js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+  <!-- Custom file upload -->
+  <script src="<?php echo Uri::base();?>js/plugins/fileupload/bootstrap-fileupload.min.js"></script>
+  <!-- select2 -->
+  <script src="<?php echo Uri::base();?>js/plugins/select2/select2.min.js"></script>
 
   <!--[if lte IE 9]>
-    <script src="<?php echo Uri::base();?>js/plugins/placeholder/jquery.placeholder.min.js"></script>
+    <script src="<?php// echo Uri::base();?>js/plugins/placeholder/jquery.placeholder.min.js"></script>
     <script>
       $(document).ready(function() {
         $('input, textarea').placeholder();

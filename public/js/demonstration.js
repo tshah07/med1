@@ -981,7 +981,7 @@ if($("#sico").length > 0){
 if($("#simg").length > 0){
 	function formatFlags(state){
 		if (!state.id) return state.text; 
-		return "<img style='padding-right:10px;' src='img/demo/flags/" + state.id.toLowerCase() + ".gif'/>" + state.text;
+		return "<img style='padding-right:10px;' src='http://localhost:70/med1/public/img/demo/flags/" + state.id.toLowerCase() + ".gif'/>" + state.text;
 	}
 	$("#simg").select2({
 		formatResult: formatFlags,

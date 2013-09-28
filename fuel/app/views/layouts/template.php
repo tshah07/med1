@@ -8,7 +8,7 @@
   
     <?php echo View::forge('partials/top_nav') ?>
 
-    <?php echo View::forge('partials/sidebar') ?> 
+    <?php  echo View::forge('partials/sidebar') ?> 
 
     
     <div id="main">

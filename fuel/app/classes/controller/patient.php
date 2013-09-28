@@ -5,6 +5,12 @@ class Controller_Patient extends Controller_base
 
 	public function action_index()
 	{
+		if(Input::is_ajax()){
+			$data["subnav"] = array('index'=> 'active' );
+
+			return new Response(View::forge('patient/index',$data));
+		}
+
 		$data["subnav"] = array('index'=> 'active' );
 		$this->template->title = 'Patient &raquo; Index';
 		$this->template->content = View::forge('patient/index', $data);

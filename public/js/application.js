@@ -1,3 +1,20 @@
+var ajax_loading_img = "<img src='http://localhost:70/med1/public/img/loading.gif' alt='Loading...'/>";
+
+
+$(function() {
+  
+  $(".tabs").bind("show", function(e) {    
+    var contentID  = $(e.target).attr("data-target");
+    var contentURL = $(e.target).attr("href");
+    if (typeof(contentURL) != 'undefined')
+      $(contentID).html(ajax_loading_img).load(contentURL, function(){ $("#MainTabs").tab(); });
+    else
+      $(contentID).tab('show');
+  });
+  $('#MainTabs a:first').tab("show");
+});
+
+
 // FLAT Theme v2.0
 function sidebarFluid(){
    if($("#left").hasClass("sidebar-fixed")){

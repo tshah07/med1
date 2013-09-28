@@ -15,13 +15,22 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="<?= Uri::base()?>patient">Show All</a>
+              <a href="<?= Uri::base()?>patient/index">Dashboard</a>
             </li>
             <li>
-              <a href="<?= Uri::base()?>patient/create">New Patient</a>
+              <a href="<?= Uri::base()?>patient/show_all">Show All</a>
             </li>
             <li>
-              <a href="<?= Uri::base()?>patient">Patient Reports to do</a>
+              <a href="<?= Uri::base()?>patient/find_a_patient">Find a Patient</a>
+            </li>
+            <li>
+              <a href="<?= Uri::base()?>patient/inpatients">In Patients</a>
+            </li>
+            <li>
+              <a href="<?= Uri::base()?>patient/outpatients">Out Patients</a>
+            </li>
+            <li>
+              <a href="<?= Uri::base()?>patient/new_patient">New Patient</a>
             </li>
             <li>
               <a href="forms-wizard.html">to do</a>
@@ -71,7 +80,7 @@
         </li>
         <li>
           <a href="#" data-toggle="dropdown" class='dropdown-toggle'>
-            <span>Tables</span>
+            <span>Inventory</span>
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
@@ -88,7 +97,7 @@
         </li>
         <li>
           <a href="#" data-toggle="dropdown" class='dropdown-toggle'>
-            <span>Plugins</span>
+            <span>Reports</span>
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
