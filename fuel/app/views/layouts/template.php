@@ -65,9 +65,7 @@
 
         <div class="row-fluid">
           <div class="span12">
-            <div class="box">
-              
-              <div class="box-content">
+            
                 <?php echo $content; ?>
 
                 <hr/>
@@ -81,7 +79,7 @@
           </div>
         </div>
       </div>
-    </div></div>
+    
     
     
     <?php echo Asset::js("custom.js");?>

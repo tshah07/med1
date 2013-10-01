@@ -22,6 +22,7 @@ return array(
 				13 => '014_create_patient_personalreviewofsystems',
 				14 => '015_create_patient_gynecologicalreviews',
 				15 => '016_create_patient_authorizations',
+				16 => '017_add_imgurl_to_patientinfos',
 			),
 		),
 		'module' => 

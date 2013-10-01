@@ -46,7 +46,8 @@ class Controller_Patient extends Controller_base
 
 	public function action_new_patient()
 	{
-		$data["subnav"] = array('new_patient'=> 'active' );
+
+       	$data["subnav"] = array('new_patient'=> 'active' );
 		$this->template->title = 'Patient &raquo; New patient';
 		$this->template->content = View::forge('patient/new_patient', $data);
 	}

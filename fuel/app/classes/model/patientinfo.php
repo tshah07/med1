@@ -31,6 +31,7 @@ class Model_Patientinfo extends \Orm\Model
 		'employer_phone',
 		'created_at',
 		'updated_at',
+		'imgUrl'
 	);
 
 	protected static $_observers = array(

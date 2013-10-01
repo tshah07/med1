@@ -60,12 +60,7 @@
   <!-- Chosen -->
   <script src="<?php echo Uri::base();?>js/plugins/chosen/chosen.jquery.min.js"></script>
 
-  <!-- Theme framework -->
-  <script src="<?php echo Uri::base();?>js/eakroko.min.js"></script>
-  <!-- Theme scripts -->
-  <script src="<?php echo Uri::base();?>js/application.js"></script>
-  <!-- Just for demonstration -->
-  <script src="<?php echo Uri::base();?>js/demonstration.js"></script>
+  
 
   <!-- Notify -->
   <script src="<?php echo Uri::base();?>js/plugins/gritter/jquery.gritter.min.js"></script>
@@ -83,6 +78,50 @@
   <script src="<?php echo Uri::base();?>js/plugins/fileupload/bootstrap-fileupload.min.js"></script>
   <!-- select2 -->
   <script src="<?php echo Uri::base();?>js/plugins/select2/select2.min.js"></script>
+  <!-- Theme framework -->
+  <script src="<?php echo Uri::base();?>js/eakroko.min.js"></script>
+  <!-- Theme scripts -->
+  <script src="<?php echo Uri::base();?>js/application.js"></script>
+  <!-- Just for demonstration -->
+  <script src="<?php echo Uri::base();?>js/demonstration.js"></script>
+  <!-- Ajax for submission plugin -->
+  <script src="http://malsup.github.com/jquery.form.js"></script> 
+
+  <script type="text/javascript">
+
+
+    $(document).ready(function(){
+
+        $('.statefull').button();
+
+        $(".statefull").click(function(){
+                  $(this).button('loading');
+                  
+              });
+
+       
+    })
+
+     
+  </script>
+
+  <style>
+      /** { margin:0; padding:0; }
+      body { padding: 30px; }
+      table { width:500px; height:500px; padding:20px; background:#f1f1f1; color:#000;  }
+      */
+      #overlay { 
+        display:none; 
+        position:absolute; 
+        background:#fff; 
+      }
+      #img-load { 
+        position:absolute; 
+      }
+      
+</style>
+
+
 
   <!--[if lte IE 9]>
     <script src="<?php// echo Uri::base();?>js/plugins/placeholder/jquery.placeholder.min.js"></script>

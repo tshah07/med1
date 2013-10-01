@@ -1,6 +1,13 @@
 var ajax_loading_img = "<img src='http://localhost:70/med1/public/img/loading.gif' alt='Loading...'/>";
 
 
+
+
+
+
+
+
+//Function for ajax loading in bootstrap tabs
 $(function() {
   
   $(".tabs").bind("show", function(e) {    

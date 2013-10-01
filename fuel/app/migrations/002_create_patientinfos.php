@@ -26,6 +26,7 @@ class Create_patientinfos
 			'cell_phone' => array('constraint' => 255, 'type' => 'varchar'),
 			'work_phone' => array('constraint' => 255, 'type' => 'varchar'),
 			'email' => array('constraint' => 255, 'type' => 'varchar'),
+			
 			'occupation' => array('constraint' => 255, 'type' => 'varchar'),
 			'employer' => array('constraint' => 255, 'type' => 'varchar'),
 			'employer_address_line' => array('constraint' => 255, 'type' => 'varchar'),
